@@ -1,0 +1,1 @@
+This is simple template for fast starting developing your React application in Typescript + Sass + React stack.
