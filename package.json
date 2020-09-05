@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js",
     "lint": "eslint ./src/**/**.{ts,tsx}",
-    "test": "npm run lint && jest"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
