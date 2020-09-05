@@ -1,9 +1,15 @@
 import * as React from 'react';
+import { useState } from 'react';
 
-export class App extends React.Component {
-    render(): JSX.Element {
-        return (
-            <h1>Hello world!</h1>
-        );
-    }
+const App = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <h1>Clicked: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Click</button>
+    </div>
+  );
 }
+
+export default App;

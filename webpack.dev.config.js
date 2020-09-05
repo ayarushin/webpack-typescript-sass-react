@@ -25,17 +25,11 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     {
-                        loader: "style-loader", // creates style nodes from JS strings
-                        options: { sourceMap: true }
+                        loader: MiniCssExtractPlugin.loader, // creates style nodes from JS strings
+                        options: { publicPath: () => path.join(__dirname, '/build') }
                     },
-                    {
-                        loader: "css-loader", // translates CSS into CommonJS
-                        options: { sourceMap: true }
-                    },
-                    {
-                        loader: "sass-loader", // compiles Sass to CSS, using Node Sass by default
-                        options: { sourceMap: true }
-                    }
+                    { loader: "css-loader" }, // translates CSS into CommonJS
+                    { loader: "sass-loader" }, // compiles Sass to CSS, using Node Sass by default
                 ]
             }
         ]
