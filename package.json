@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js",
-    "lint": "tslint ./src/**/**.{ts,tsx}",
+    "lint": "eslint ./src/**/**.{ts,tsx}",
     "test": "npm run lint && jest"
   },
   "keywords": [],
